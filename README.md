@@ -1,8 +1,8 @@
 # DeepSeek 插件修改版 / AI-assisted modification
 
-本项目是对他人 DeepSeek 翻译插件的修改，不是我们原创的插件，也不是 Pot 或 DeepSeek 的官方发行版。适配、修复及相关修改借助 AI 完成。
+本项目是对他人 DeepSeek 翻译插件的修改，不是我原创的插件，也不是 Pot 或 DeepSeek 的官方发行版。适配、修复及相关修改借助 AI 完成。
 
-已有来源记录：pot-app-translate-plugin-deepseek-1.0.0.zip，SHA256 为 74d30bb86dd338ae114ebbf924f0c561dfd6729bcd4194f8f8bc85c6ae24d153。当前提供的源码包没有原作者身份和许可证文件，原作者、准确上游链接与许可仍需核实；不应把其他 DeepSeek 插件的作者或许可证套用于本项目。本声明不授予对上游代码的新许可。
+已有来源记录：pot-app-translate-plugin-deepseek-1.0.0.zip，SHA256 为 74d30bb86dd338ae114ebbf924f0c561dfd6729bcd4194f8f8bc85c6ae24d153。
 
 This is an unofficial modification of an existing third-party DeepSeek translation plugin. Changes were made with AI assistance; we do not claim authorship of the original plugin. The original author, upstream URL, and license remain to be verified from the supplied source archive.
 
@@ -10,7 +10,7 @@ This is an unofficial modification of an existing third-party DeepSeek translati
 
 # DeepSeek 翻译插件：Pot Desktop 3.0.7 适配版
 
-版本：1.0.1。适用于本次 Ubuntu 26.04 版 Pot Desktop 3.0.7；纯 JavaScript 插件，
+版本：1.0.1。适用于我本人仓库里的修改版 Ubuntu 26.04 版 Pot Desktop 3.0.7（由于 pot 项目已归档，我无法在原项目下进行comment,所以只能指向我个人的仓库，该修改版在 pot 源代码的基础上解决了 Ubuntu 26 lTS 的依赖问题，属于该系统定制版本，不一定同其他Ubuntu版本兼容）；纯 JavaScript 插件，
 不依赖旧版 WebKitGTK，不需要重建或替换 Pot deb。
 
 ## 安装与配置
@@ -19,10 +19,7 @@ This is an unofficial modification of an existing third-party DeepSeek translati
 2. 打开 Pot 的“偏好设置 → 服务设置 → 翻译 → 添加外部插件/安装插件”，选择 `.potext`。
 3. 在外部插件列表中选择 DeepSeek，创建翻译服务实例。
 4. 选择模型、填写你自己的 DeepSeek API 密钥，保存。
-5. 在翻译窗口启用该 DeepSeek 服务实例，输入文本验证。
-
-API 密钥在 DeepSeek 平台创建：https://platform.deepseek.com/api_keys
-不要把真实密钥写入 main.js、源码包或发送到聊天中。本发布包不含任何有效密钥。
+5. 在翻译窗口启用该 DeepSeek 服务即可
 
 ## 模型兼容
 
