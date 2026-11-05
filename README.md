@@ -39,22 +39,6 @@ This is an unofficial modification of an existing third-party DeepSeek translati
 ## 适配范围
 
 - 修复原 ZIP 不能直接导入的问题：标准 `.potext`、正确文件名、根目录包含 info.json/main.js。
-- 保留 Pot 的 `utils.tauriFetch`、Tauri 1 Json body 格式和非流式返回。
-- 空密钥在联网前提示；空输入不发送请求；模型和目标语言检查。
-- 提示 401/402/429 等错误，拒绝空响应、仅思考内容及被截断的译文。
-- 保留有意义的引号；错误信息不回显密钥；不自动重试付费请求。
-
-## 验证与构建
-
-```bash
-node test.mjs
-python3 build.py
-```
-
-构建结果位于本目录 dist/。Node 契约测试使用测试响应，覆盖配置兼容、参数、
-错误处理和输出完整性；真实 Pot 的导入/加载检查结果另见测试报告。
-没有提供有效密钥，因此没有完成 DeepSeek 真实译文和账户余额验证。
-本次没有修改你的现有 Pot 配置，也没有安装插件到你的日常配置中。
 
 源码来源：用户提供的 pot-app-translate-plugin-deepseek-1.0.0.zip。
 原始包 SHA256：74d30bb86dd338ae114ebbf924f0c561dfd6729bcd4194f8f8bc85c6ae24d153。
