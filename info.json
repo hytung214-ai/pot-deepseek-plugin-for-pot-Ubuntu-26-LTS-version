@@ -1,0 +1,55 @@
+{
+  "id": "plugin.com.pot-app.deepseek",
+  "plugin_type": "translate",
+  "icon": "deepseek.svg",
+  "display": "DeepSeek",
+  "homepage": "https://api-docs.deepseek.com/",
+  "needs": [
+    {
+      "key": "model",
+      "display": "模型选择",
+      "type": "select",
+      "options": {
+        "deepseek-flash": "Flash（推荐）",
+        "deepseek-v4-pro": "V4 Pro（非思考）",
+        "deepseek-chat": "旧 Chat → Flash",
+        "deepseek-reasoner": "旧 Reasoner（思考）"
+      },
+      "default": "deepseek-flash"
+    },
+    {
+      "key": "apiKey",
+      "display": "API密钥",
+      "type": "input"
+    }
+  ],
+  "language": {
+    "auto": "auto",
+    "zh_cn": "zh",
+    "zh_tw": "zh_HANT",
+    "en": "en",
+    "ja": "ja",
+    "ko": "ko",
+    "fr": "fr",
+    "es": "es",
+    "ru": "ru",
+    "de": "de",
+    "it": "it",
+    "tr": "tr",
+    "pt_pt": "pt",
+    "pt_br": "pt",
+    "vi": "vi",
+    "id": "id",
+    "th": "th",
+    "ms": "ms",
+    "ar": "ar",
+    "hi": "hi",
+    "mn_cy": "mn",
+    "mn_mo": "mn",
+    "km": "km",
+    "nb_no": "no",
+    "nn_no": "no",
+    "fa": "fa"
+  },
+  "version": "1.0.1"
+}
